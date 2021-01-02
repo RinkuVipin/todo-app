@@ -1,22 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import TodoGrid from "./components/TodoGrid";
+import TodoDialog from "./components/TodoDialog";
+import { connect } from "react-redux";
+import "./App.css";
+import { useEffect } from "react";
+import { addTitle } from "./redux/actions";
 
+const newData = "newDate";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header>
+        <TodoGrid />
+        <TodoDialog />
       </header>
     </div>
   );

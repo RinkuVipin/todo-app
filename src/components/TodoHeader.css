@@ -1,0 +1,15 @@
+.header-input {
+  background-color: rgb(58, 1, 80);
+  border: 0;
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.header-input:focus {
+  outline: none;
+}
